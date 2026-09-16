@@ -52,7 +52,7 @@ include("header.php");
 
         <!-- Banner Image matching pages/tapnpayb.png with asset 15 -->
         <div class="tapnpayb-banner-wrap">
-            <img src="assets/images/banner/tapnpayb.png" alt="Tap and Pay WLL.Bahrain">
+            <img src="<?php echo cld_url('assets/images/banner/tapnpayb.png'); ?>" alt="Tap and Pay WLL.Bahrain">
         </div>
 
         <!-- Website Link matching pages/tapnpayb.png -->

@@ -52,7 +52,7 @@ include("header.php");
 
         <!-- Banner Image generated for GG Consortium -->
         <div class="ggc-banner-wrap">
-            <img src="assets/images/banner/ggc.png" alt="GG Consortium(Bangladesh)Ltd">
+            <img src="<?php echo cld_url('assets/images/banner/ggc.png'); ?>" alt="GG Consortium(Bangladesh)Ltd">
         </div>
 
         <!-- Website Link -->

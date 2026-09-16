@@ -161,7 +161,7 @@ include("header.php");
             <div class="col-xs-12 col-sm-4 col-md-4 event-card-item">
                 <div class="event-post-box">
                     <div class="event-img-wrap">
-                        <img src="assets/images/news/1.jpg" alt="Signing Ceremony between mecca cola and Kamrul Group">
+                        <img src="<?php echo cld_url('assets/images/news/1.jpg'); ?>" alt="Signing Ceremony between mecca cola and Kamrul Group">
                         <div class="event-date-badge">October 18, 2017</div>
                     </div>
                     <div class="event-content-body">
@@ -186,7 +186,7 @@ include("header.php");
             <div class="col-xs-12 col-sm-4 col-md-4 event-card-item">
                 <div class="event-post-box">
                     <div class="event-img-wrap">
-                        <img src="assets/images/news/2.jpg" alt="The CEO of Mecca Cola World Group visited the office of Kamrul Group">
+                        <img src="<?php echo cld_url('assets/images/news/2.jpg'); ?>" alt="The CEO of Mecca Cola World Group visited the office of Kamrul Group">
                         <div class="event-date-badge">October 17, 2017</div>
                     </div>
                     <div class="event-content-body">
@@ -211,7 +211,7 @@ include("header.php");
             <div class="col-xs-12 col-sm-4 col-md-4 event-card-item">
                 <div class="event-post-box">
                     <div class="event-img-wrap">
-                        <img src="assets/images/news/3.jpg" alt="Launching Ceremony of Kamrul Agro Food Industries Ltd">
+                        <img src="<?php echo cld_url('assets/images/news/3.jpg'); ?>" alt="Launching Ceremony of Kamrul Agro Food Industries Ltd">
                         <div class="event-date-badge">17 August 2017</div>
                     </div>
                     <div class="event-content-body">
@@ -277,7 +277,7 @@ var newsData = {
         title: "Signing Ceremony between Mecca Cola and Kamrul Group",
         date: "October 18, 2017",
         source: "Source: BD Financial News",
-        img: "assets/images/news/1.jpg",
+        img: "<?php echo cld_url('assets/images/news/1.jpg'); ?>",
         video: "https://www.youtube.com/embed/SZbawv6aWMQ",
         desc: "A historic signing ceremony was officially held between Mecca Cola World Group and Kamrul Group. Under this landmark bilateral agreement, Kamrul Group enters into a strategic partnership to manufacture, market, and distribute world-renowned Mecca Cola beverage products across Bangladesh and regional international markets.<br><br>The signing ceremony was graced by the top leadership of both organizations, notable business dignitaries, corporate stakeholders, and international delegates, symbolizing a significant expansion in the country's fast-moving consumer goods (FMCG) and beverage manufacturing industries."
     },
@@ -285,7 +285,7 @@ var newsData = {
         title: "The CEO of Mecca Cola World Group visited the office of Kamrul Group",
         date: "October 17, 2017",
         source: "Source: Khobor71 News",
-        img: "assets/images/news/2.jpg",
+        img: "<?php echo cld_url('assets/images/news/2.jpg'); ?>",
         video: "https://www.youtube.com/embed/EvEXpUlByvs",
         desc: "The Chief Executive Officer of Mecca Cola World Group paid a high-profile official visit to the corporate headquarters of Kamrul Group in Banani, Dhaka. During the extensive visit, bilateral strategic discussions were conducted with Chairman Dr. Kamrul Ahsan and senior directors.<br><br>The delegation reviewed manufacturing and quality assurance benchmarks, strategic distribution corridors across South Asia, and future technological modernizations for modern bottling and canning plants under the joint venture umbrella."
     },
@@ -293,7 +293,7 @@ var newsData = {
         title: "Launching Ceremony of Kamrul Agro Food Industries Ltd",
         date: "17 August 2017",
         source: "Source: A joint venture of Mecca Cola...",
-        img: "assets/images/news/3.jpg",
+        img: "<?php echo cld_url('assets/images/news/3.jpg'); ?>",
         video: "https://www.youtube.com/embed/12GQU7fUtvI",
         desc: "Kamrul Agro Food Industries Ltd officially celebrated its grand launching ceremony as a flagship agro-processing and beverage industrial facility. Built with state-of-the-art European and Asian automated technology, the plant produces natural fruit juices, purified drinking water, and carbonated beverages adhering to strict BSTI and international hygiene standards.<br><br>The venture represents a major commitment to empowering local farmers, generating skilled employment, and delivering world-class beverages to consumers nationwide."
     }

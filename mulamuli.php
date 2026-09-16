@@ -68,7 +68,7 @@ include("header.php");
 
         <!-- Banner Image (3. Mulamuli.com.bd .jpg) -->
         <div class="mulamuli-banner-wrap">
-            <img src="assets/images/banner/mulamuli_banner.jpg" alt="mulamuli.com.bd">
+            <img src="<?php echo cld_url('assets/images/banner/mulamuli_banner.jpg'); ?>" alt="mulamuli.com.bd">
         </div>
 
         <!-- Website Link matching pages/mulamuli.png -->

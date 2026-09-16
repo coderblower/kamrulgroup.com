@@ -167,7 +167,7 @@
             <br><br>
             <div class="row">
                 <div class="col-sm-4 footer-left-section">
-                    <img src="assets/images/kamrulgroup.png" alt="Kamrul Group" style="max-width: 200px; height: auto;">
+                    <img src="<?php echo cld_url('assets/images/kamrulgroup.png'); ?>" alt="Kamrul Group" style="max-width: 200px; height: auto;">
                     <div class="share-on" style="margin-top: 15px;">
                         <a href="https://www.facebook.com/Kamrul-Group-%E0%A6%95%E0%A6%BE%E0%A6%AE%E0%A6%B0%E0%A7%81%E0%A6%B2-%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A7%81%E0%A6%AA-220121791514205/" title="" target="_blank" class="fa fa-facebook"></a>
                         <a href="#" title="" class="fa fa-twitter"></a>

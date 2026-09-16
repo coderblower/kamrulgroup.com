@@ -65,7 +65,7 @@ include("header.php");
 
         <!-- Banner Image (12. swift Link.jpg) -->
         <div class="swiftlink-banner-wrap">
-            <img src="assets/images/banner/swiftlink_banner.jpg" alt="SwiftLink Payment services L.L.C">
+            <img src="<?php echo cld_url('assets/images/banner/swiftlink_banner.jpg'); ?>" alt="SwiftLink Payment services L.L.C">
         </div>
 
         <!-- Website Link matching pages/swiftlink.png -->

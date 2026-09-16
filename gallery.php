@@ -341,11 +341,11 @@ $gallery_items = [
                     <a class="gallery-card thumbnail-link" href="#" 
                        data-toggle="modal" 
                        data-title="<?= htmlspecialchars($item['title']) ?>" 
-                       data-image="<?= htmlspecialchars($item['image']) ?>" 
+                       data-image="<?= htmlspecialchars(cld_url($item['image'])) ?>" 
                        data-target="#image-gallery">
                         <div class="gallery-img-wrap">
                             <img class="img-responsive gallery-img" 
-                                 src="<?= htmlspecialchars($item['image']) ?>" 
+                                 src="<?= htmlspecialchars(cld_url($item['image'])) ?>" 
                                  alt="<?= htmlspecialchars($item['title']) ?>" 
                                  loading="lazy">
                         </div>

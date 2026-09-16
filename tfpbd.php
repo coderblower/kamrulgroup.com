@@ -71,7 +71,7 @@ include("header.php");
 
         <!-- Custom Content-Tailored Banner Image -->
         <div class="tfpbd-banner-wrap">
-            <img src="assets/images/banner/tfpbd_banner.jpg" alt="TFP SOLUTION BANGLADESH">
+            <img src="<?php echo cld_url('assets/images/banner/tfpbd_banner.jpg'); ?>" alt="TFP SOLUTION BANGLADESH">
         </div>
 
         <!-- Website Link matching pages/tfpbd.png -->

@@ -64,7 +64,7 @@ include("header.php");
 
         <!-- Banner Image -->
         <div class="tapnpayuk-banner-wrap">
-            <img src="assets/images/banner/tapnpayuk.png" alt="Tap N Pay (UK) Ltd.">
+            <img src="<?php echo cld_url('assets/images/banner/tapnpayuk.png'); ?>" alt="Tap N Pay (UK) Ltd.">
         </div>
 
         <!-- Website Link matching pages/tapnpayuk.png -->

@@ -65,7 +65,7 @@ include("header.php");
 
         <!-- Banner Image (4. Khobor71(Online News Portal).jpg) -->
         <div class="khobor71-banner-wrap">
-            <img src="assets/images/banner/khobor71_banner.jpg" alt="Khobor71 Online News Portal">
+            <img src="<?php echo cld_url('assets/images/banner/khobor71_banner.jpg'); ?>" alt="Khobor71 Online News Portal">
         </div>
 
         <!-- Website Link matching pages/khobor71.png -->

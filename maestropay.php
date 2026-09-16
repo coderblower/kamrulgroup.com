@@ -64,7 +64,7 @@ include("header.php");
 
         <!-- Banner Image (maestropay-banner.png) -->
         <div class="maestropay-banner-wrap">
-            <img src="assets/images/banner/maestropay-banner.png" alt="Maestro Pay SDN BHD">
+            <img src="<?php echo cld_url('assets/images/banner/maestropay-banner.png'); ?>" alt="Maestro Pay SDN BHD">
         </div>
 
         <!-- Website Link matching pages/maestropay.png -->

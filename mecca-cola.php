@@ -146,18 +146,18 @@ include("header.php");
         <!-- 3 Images Side by Side in 3 Parts -->
         <div class="mecca-images-grid">
             <div class="mecca-gallery-card">
-                <a href="assets/images/mecca_2.jpg" class="fancybox" rel="mecca-gallery" title="Mecca Cola Beverage Product Line">
-                    <img src="assets/images/mecca_2.jpg" alt="Mecca Cola Beverage Product Line">
+                <a href="<?php echo cld_url('assets/images/mecca_2.jpg'); ?>" class="fancybox" rel="mecca-gallery" title="Mecca Cola Beverage Product Line">
+                    <img src="<?php echo cld_url('assets/images/mecca_2.jpg'); ?>" alt="Mecca Cola Beverage Product Line">
                 </a>
             </div>
             <div class="mecca-gallery-card">
-                <a href="assets/images/mecca_main.jpg" class="fancybox" rel="mecca-gallery" title="Mecca Cola Automated Canning Line">
-                    <img src="assets/images/mecca_main.jpg" alt="Mecca Cola Automated Canning Line">
+                <a href="<?php echo cld_url('assets/images/mecca_main.jpg'); ?>" class="fancybox" rel="mecca-gallery" title="Mecca Cola Automated Canning Line">
+                    <img src="<?php echo cld_url('assets/images/mecca_main.jpg'); ?>" alt="Mecca Cola Automated Canning Line">
                 </a>
             </div>
             <div class="mecca-gallery-card">
-                <a href="assets/images/mecca_1.jpg" class="fancybox" rel="mecca-gallery" title="Mecca Cola Cans Packaging & Stacking">
-                    <img src="assets/images/mecca_1.jpg" alt="Mecca Cola Cans Packaging & Stacking">
+                <a href="<?php echo cld_url('assets/images/mecca_1.jpg'); ?>" class="fancybox" rel="mecca-gallery" title="Mecca Cola Cans Packaging & Stacking">
+                    <img src="<?php echo cld_url('assets/images/mecca_1.jpg'); ?>" alt="Mecca Cola Cans Packaging & Stacking">
                 </a>
             </div>
         </div>

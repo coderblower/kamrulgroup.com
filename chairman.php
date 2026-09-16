@@ -143,7 +143,7 @@ include("header.php");
             <div class="chairman-image-col">
                 <div class="chairman-photo-card">
                     <!-- High-Resolution Chairman Photo -->
-                    <img src="assets/images/ch_mess.jpeg" alt="Dr. Kamrul Ahsan - Chairman, Kamrul Group" class="chairman-photo">
+                    <img src="<?php echo cld_url('assets/images/ch_mess.jpeg'); ?>" alt="Dr. Kamrul Ahsan - Chairman, Kamrul Group" class="chairman-photo">
 
                     <!-- Name & Profile Link directly underneath image -->
                     <div class="chairman-signature-block">

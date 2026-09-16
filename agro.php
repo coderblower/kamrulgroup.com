@@ -13,7 +13,7 @@ include("header.php");
                     Kamrul Agro Food Industries Ltd has started its operation in 2011 as a manufacturer of fruit juice, Drinking water and beverages. Since its inception Kamrul Agro is working tirelessly to shape up their position in the field of food &amp; beverages. Kamrul Agro is currently one of the most admired food &amp; beverages brands among the millions of people of Bangladesh including INDIA &amp; UK where our Products are regularly being exported. All our products are produced as per international standards maintaining highest level of quality at every stages of its production process. Kamrul Agro food Industries Ltd is currently producing more than 20 food products under different categories i.e. Juices, Drinks, Mineral Water, Carbonated beverages, Energy drinks.
                 </p>
                 <div style="margin-top: 25px; margin-bottom: 30px;">
-                    <img src="assets/images/banner/agro-banner.jpg" class="img-responsive center-block" alt="Kamrul Agro Food Industries Ltd." style="width: 100%; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                    <img src="<?php echo cld_url('assets/images/banner/agro-banner.jpg'); ?>" class="img-responsive center-block" alt="Kamrul Agro Food Industries Ltd." style="width: 100%; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
                 </div>
             </div>
             <div class="col-md-1 hidden-xs hidden-sm"></div>
@@ -36,12 +36,15 @@ include("header.php");
             <div class="col-md-5 col-sm-6 col-xs-12" style="margin-bottom: 30px;">
                 <h4 style="font-weight: 700; color: #222; font-size: 18px; margin-bottom: 10px;">Plastic Section</h4>
                 <p style="text-align: justify; font-size: 14px; line-height: 1.7; color: #555; min-height: 50px;">In this section we produce required size of PET bottles from perform and the perform is also produced from the PET Chips or Resin.</p>
-                <img src="assets/images/KG/6.jpg" class="img-responsive" alt="Plastic Section" style="width: 100%; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-top: 15px;">
+                <img src="<?php echo cld_url('assets/images/KG/6.jpg'); ?>" class="img-responsive" alt="Plastic Section" style="width: 100%; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-top: 15px;">
             </div>
-            <div class="col-md-5 col-sm-6 col-xs-12" style="margin-bottom: 30px;">
+
+            <div class="col-md-5 col-sm-6 col-xs-12" style="margin-bottom: 25px;">
                 <h4 style="font-weight: 700; color: #222; font-size: 18px; margin-bottom: 10px;">Mixing and preparation section:</h4>
-                <p style="text-align: justify; font-size: 14px; line-height: 1.7; color: #555; min-height: 50px;">In this section we mix and prepare the juice, drinks, beverage as per our recipe. Where suger, flavor, pulp and other ingredients getting mixed automatically.</p>
-                <img src="assets/images/KG/3.jpg" class="img-responsive" alt="Mixing and preparation section" style="width: 100%; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-top: 15px;">
+                <p style="text-align: justify; font-size: 14px; line-height: 1.7; color: #555; min-height: 50px;">
+                    Our mixing and preparation section is fully automated and in compliance with CIP (Cleaning in Place). Sugar syrup preparation, beverage blending and other related process done with touch-free and in completely clean environment.
+                </p>
+                <img src="<?php echo cld_url('assets/images/KG/3.jpg'); ?>" class="img-responsive" alt="Mixing and preparation section" style="width: 100%; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-top: 15px;">
             </div>
             <div class="col-md-1 hidden-xs hidden-sm"></div>
         </div>
@@ -52,12 +55,15 @@ include("header.php");
             <div class="col-md-5 col-sm-6 col-xs-12" style="margin-bottom: 30px;">
                 <h4 style="font-weight: 700; color: #222; font-size: 18px; margin-bottom: 10px;">Rinsing, Filling and Capping Section:</h4>
                 <p style="text-align: justify; font-size: 14px; line-height: 1.7; color: #555; min-height: 50px;">In this section the juice and beverage come to the filling machine from the mixing tank via Pasteurizer, heat exchanger, chiller and other machines for automatic filling and capping.</p>
-                <img src="assets/images/KG/f3.png" class="img-responsive" alt="Rinsing, Filling and Capping Section" style="width: 100%; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-top: 15px;">
+                <img src="<?php echo cld_url('assets/images/KG/f3.png'); ?>" class="img-responsive" alt="Rinsing, Filling and Capping Section" style="width: 100%; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-top: 15px;">
             </div>
-            <div class="col-md-5 col-sm-6 col-xs-12" style="margin-bottom: 30px;">
+
+            <div class="col-md-5 col-sm-6 col-xs-12" style="margin-bottom: 25px;">
                 <h4 style="font-weight: 700; color: #222; font-size: 18px; margin-bottom: 10px;">Labeling and packing section</h4>
-                <p style="text-align: justify; font-size: 14px; line-height: 1.7; color: #555; min-height: 50px;">Now the bottle is filled and capped, in this stage the conveyor belt takes the bottles through inspection check, warmer for its automatic labeling. After getting labeled the conveyor takes them for the group packing (ie 24 pieces or 12 pieces a case) automatically.</p>
-                <img src="assets/images/KG/7.jpg" class="img-responsive" alt="Labeling and packing section" style="width: 100%; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-top: 15px;">
+                <p style="text-align: justify; font-size: 14px; line-height: 1.7; color: #555; min-height: 50px;">
+                    We have in our line auto labeling and auto packing with wrapper. These automatic line help quick processing without touching human hand and thus ensuring hygiene.
+                </p>
+                <img src="<?php echo cld_url('assets/images/KG/7.jpg'); ?>" class="img-responsive" alt="Labeling and packing section" style="width: 100%; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-top: 15px;">
             </div>
             <div class="col-md-1 hidden-xs hidden-sm"></div>
         </div>
@@ -230,7 +236,7 @@ include("header.php");
                 <img src="https://img.youtube.com/vi/<?php echo $v['id']; ?>/hqdefault.jpg" class="agro-video-thumb" alt="<?php echo htmlspecialchars($v['title'], ENT_QUOTES); ?>" loading="lazy">
                 <div class="agro-video-overlay-top">
                     <div class="agro-video-avatar">
-                        <img src="assets/images/kamrul_avatar.jpg" alt="kamrul Ahsan">
+                        <img src="<?php echo cld_url('assets/images/kamrul_avatar.jpg'); ?>" alt="kamrul Ahsan">
                     </div>
                     <div class="agro-video-meta">
                         <span class="agro-video-title"><?php echo htmlspecialchars($v['title']); ?></span>

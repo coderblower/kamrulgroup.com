@@ -69,7 +69,7 @@ include("header.php");
 
         <!-- Banner Image (8.MaestroSoft Ltd.jpg) -->
         <div class="maestrosoft-banner-wrap">
-            <img src="assets/images/banner/maestrosoft_banner.jpg" alt="MaestroSoft Limited">
+            <img src="<?php echo cld_url('assets/images/banner/maestrosoft_banner.jpg'); ?>" alt="MaestroSoft Limited">
         </div>
 
         <!-- Website Link matching pages/maestrosoft.png -->

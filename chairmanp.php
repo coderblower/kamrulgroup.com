@@ -71,7 +71,7 @@ include("header.php");
     <div class="container">
         <!-- Broken image replacement matching pages/chairmanp.png -->
         <div class="profile-image-container">
-            <img src="assets/images/chman_sir12crop2.jpeg" alt="Dr. Kamrul Ahsan - Chairman, Kamrul Group">
+            <img src="<?php echo cld_url('assets/images/chman_sir12crop2.jpeg'); ?>" alt="Dr. Kamrul Ahsan - Chairman, Kamrul Group">
         </div>
 
         <!-- Paragraph 1 with Drop Cap 'D' -->

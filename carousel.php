@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/cloudinary.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -75,20 +76,20 @@
 <body>
   <div class="carousel-border-box">
     <div class="customer-logos">
-      <div class="slide"><a href="mecca-cola.php" target="_parent"><img src="assets/images/image1.png" alt="Mecca Cola"></a></div>
-      <div class="slide"><a href="must.php" target="_parent"><img src="assets/images/image2.png" alt="MUST University"></a></div>
-      <div class="slide"><a href="wowplay.php" target="_parent"><img src="assets/images/image3.png" alt="Hello Future"></a></div>
-      <div class="slide"><a href="maestrosoft.php" target="_parent"><img src="assets/images/image4.png" alt="Maestro Soft"></a></div>
-      <div class="slide"><a href="tfpbd.php" target="_parent"><img src="assets/images/image5.png" alt="TFP Solutions"></a></div>
-      <div class="slide"><a href="maestrocrown.php" target="_parent"><img src="assets/images/image6.png" alt="Maestro Crown College"></a></div>
-      <div class="slide"><a href="khobor71.php" target="_parent"><img src="assets/images/image7.png" alt="Khobor71"></a></div>
-      <div class="slide"><a href="mulamuli.php" target="_parent"><img src="assets/images/image9.png" alt="Mulamuli"></a></div>
-      <div class="slide"><a href="agro.php" target="_parent"><img src="assets/images/image10.png" alt="Kamrul Agro"></a></div>
-      <div class="slide"><a href="swiftlink.php" target="_parent"><img src="assets/images/image11.png" alt="Swiftlink"></a></div>
-      <div class="slide"><a href="maestropay.php" target="_parent"><img src="assets/images/image12.png" alt="Maestro Pay"></a></div>
-      <div class="slide"><a href="fwwmc.php" target="_parent"><img src="assets/images/image13.png" alt="FWWMC"></a></div>
-      <div class="slide"><a href="tapnpayb.php" target="_parent"><img src="assets/images/image14.png" alt="Tap N Pay Bahrain"></a></div>
-      <div class="slide"><a href="dignite.php" target="_parent"><img src="assets/images/image15.png" alt="Dignite International"></a></div>
+      <div class="slide"><a href="mecca-cola.php" target="_parent"><img src="<?php echo cld_url('assets/images/image1.png'); ?>" alt="Mecca Cola"></a></div>
+      <div class="slide"><a href="must.php" target="_parent"><img src="<?php echo cld_url('assets/images/image2.png'); ?>" alt="MUST University"></a></div>
+      <div class="slide"><a href="wowplay.php" target="_parent"><img src="<?php echo cld_url('assets/images/image3.png'); ?>" alt="Hello Future"></a></div>
+      <div class="slide"><a href="maestrosoft.php" target="_parent"><img src="<?php echo cld_url('assets/images/image4.png'); ?>" alt="Maestro Soft"></a></div>
+      <div class="slide"><a href="tfpbd.php" target="_parent"><img src="<?php echo cld_url('assets/images/image5.png'); ?>" alt="TFP Solutions"></a></div>
+      <div class="slide"><a href="maestrocrown.php" target="_parent"><img src="<?php echo cld_url('assets/images/image6.png'); ?>" alt="Maestro Crown College"></a></div>
+      <div class="slide"><a href="khobor71.php" target="_parent"><img src="<?php echo cld_url('assets/images/image7.png'); ?>" alt="Khobor71"></a></div>
+      <div class="slide"><a href="mulamuli.php" target="_parent"><img src="<?php echo cld_url('assets/images/image9.png'); ?>" alt="Mulamuli"></a></div>
+      <div class="slide"><a href="agro.php" target="_parent"><img src="<?php echo cld_url('assets/images/image10.png'); ?>" alt="Kamrul Agro"></a></div>
+      <div class="slide"><a href="swiftlink.php" target="_parent"><img src="<?php echo cld_url('assets/images/image11.png'); ?>" alt="Swiftlink"></a></div>
+      <div class="slide"><a href="maestropay.php" target="_parent"><img src="<?php echo cld_url('assets/images/image12.png'); ?>" alt="Maestro Pay"></a></div>
+      <div class="slide"><a href="fwwmc.php" target="_parent"><img src="<?php echo cld_url('assets/images/image13.png'); ?>" alt="FWWMC"></a></div>
+      <div class="slide"><a href="tapnpayb.php" target="_parent"><img src="<?php echo cld_url('assets/images/image14.png'); ?>" alt="Tap N Pay Bahrain"></a></div>
+      <div class="slide"><a href="dignite.php" target="_parent"><img src="<?php echo cld_url('assets/images/image15.png'); ?>" alt="Dignite International"></a></div>
     </div>
   </div>
 

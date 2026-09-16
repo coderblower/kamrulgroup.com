@@ -65,7 +65,7 @@ include("header.php");
 
         <!-- Banner Image (5.Maestro Crown College.jpg) -->
         <div class="maestrocrown-banner-wrap">
-            <img src="assets/images/banner/maestrocrown_banner.jpg" alt="Maestro Crown School & College">
+            <img src="<?php echo cld_url('assets/images/banner/maestrocrown_banner.jpg'); ?>" alt="Maestro Crown School & College">
         </div>
 
         <!-- Website Link matching pages/maestrocrown.png -->

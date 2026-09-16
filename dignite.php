@@ -64,7 +64,7 @@ include("header.php");
 
         <!-- Banner Image -->
         <div class="dignite-banner-wrap">
-            <img src="assets/images/banner/dignite.png" alt="Dignite international, Bangladesh Chapter">
+            <img src="<?php echo cld_url('assets/images/banner/dignite.png'); ?>" alt="Dignite international, Bangladesh Chapter">
         </div>
 
         <!-- Website Link matching pages/dignite.png -->

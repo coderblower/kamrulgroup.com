@@ -68,7 +68,7 @@ include("header.php");
 
         <!-- Banner Image (man.png) -->
         <div class="fwwmc-banner-wrap">
-            <img src="assets/images/banner/man.png" alt="Worker Welfare Watch SDN BHD.">
+            <img src="<?php echo cld_url('assets/images/banner/man.png'); ?>" alt="Worker Welfare Watch SDN BHD.">
         </div>
 
         <!-- Bottom Description Text matching pages/fwwmc.png -->

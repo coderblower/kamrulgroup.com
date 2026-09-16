@@ -65,7 +65,7 @@ include("header.php");
 
         <!-- Banner Image (6.Wow Play TV.jpg) -->
         <div class="wowplay-banner-wrap">
-            <img src="assets/images/banner/wowplay_banner.jpg" alt="Wow Play IP Television">
+            <img src="<?php echo cld_url('assets/images/banner/wowplay_banner.jpg'); ?>" alt="Wow Play IP Television">
         </div>
 
         <!-- Website Link matching pages/wowplay.png -->

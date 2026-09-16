@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/cloudinary.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -78,16 +79,16 @@
 <body>
   <div class="carousel-border-box">
     <div class="agro-products-slider">
-      <div class="slide"><img src="assets/images/image10.png" alt="Kamrul Agro Food Industries"></div>
-      <div class="slide"><img src="assets/images/companies/agro.png" alt="Kamrul Agro"></div>
-      <div class="slide"><img src="assets/images/image1.png" alt="Mecca Cola"></div>
-      <div class="slide"><img src="assets/images/KG/8.jpg" alt="Agro Bottled Beverage"></div>
-      <div class="slide"><img src="assets/images/KG/9.jpg" alt="Spring Water"></div>
-      <div class="slide"><img src="assets/images/KG/7.jpg" alt="Packaged Drinks"></div>
-      <div class="slide"><img src="assets/images/KG/2.jpg" alt="Bottled Water Production"></div>
-      <div class="slide"><img src="assets/images/KG/1.jpg" alt="Pure Mineral Water"></div>
-      <div class="slide"><img src="assets/images/companies/mecca.png" alt="Mecca Cola Bangladesh"></div>
-      <div class="slide"><img src="assets/images/KG/6.jpg" alt="Fresh Juice & Drinks"></div>
+      <div class="slide"><img src="<?php echo cld_url('assets/images/image10.png'); ?>" alt="Kamrul Agro Food Industries"></div>
+      <div class="slide"><img src="<?php echo cld_url('assets/images/companies/agro.png'); ?>" alt="Kamrul Agro"></div>
+      <div class="slide"><img src="<?php echo cld_url('assets/images/image1.png'); ?>" alt="Mecca Cola"></div>
+      <div class="slide"><img src="<?php echo cld_url('assets/images/KG/8.jpg'); ?>" alt="Agro Bottled Beverage"></div>
+      <div class="slide"><img src="<?php echo cld_url('assets/images/KG/9.jpg'); ?>" alt="Spring Water"></div>
+      <div class="slide"><img src="<?php echo cld_url('assets/images/KG/7.jpg'); ?>" alt="Packaged Drinks"></div>
+      <div class="slide"><img src="<?php echo cld_url('assets/images/KG/2.jpg'); ?>" alt="Bottled Water Production"></div>
+      <div class="slide"><img src="<?php echo cld_url('assets/images/KG/1.jpg'); ?>" alt="Pure Mineral Water"></div>
+      <div class="slide"><img src="<?php echo cld_url('assets/images/companies/mecca.png'); ?>" alt="Mecca Cola Bangladesh"></div>
+      <div class="slide"><img src="<?php echo cld_url('assets/images/KG/6.jpg'); ?>" alt="Fresh Juice & Drinks"></div>
     </div>
   </div>
 

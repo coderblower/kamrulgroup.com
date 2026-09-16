@@ -7,7 +7,7 @@ include("header.php");
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-4 col-md-2" style="margin-bottom: 25px;">
-                <img src="assets/images/managing.jpg" class="img-responsive center-block" alt="Mrs. Dil Afroze - Managing Director" style="width: 100%; max-width: 160px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-radius: 2px;">
+                <img src="<?php echo cld_url('assets/images/managing.jpg'); ?>" class="img-responsive center-block" alt="Mrs. Dil Afroze - Managing Director" style="width: 100%; max-width: 160px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-radius: 2px;">
             </div>
 
             <div class="col-xs-12 col-sm-8 col-md-10">

@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/cloudinary.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -152,7 +153,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <span style="margin-top:-20px!important"><a class="navbar-logo" href="index.php" title="Kamrul Group">
-                        <img src="assets/images/kamrulgroup.png" alt="Kamrul Group Logo" width="100" height="84"></a></span>
+                        <img src="<?php echo cld_url('assets/images/kamrulgroup.png'); ?>" alt="Kamrul Group Logo" width="100" height="84"></a></span>
                 </div>
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
