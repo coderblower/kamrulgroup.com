@@ -76,141 +76,106 @@ include("header.php");
     </div>
 
     <!-- Video Producing Process Section -->
+    <style>
+        .agro-video-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0;
+            width: 100%;
+            margin-top: 15px;
+            margin-bottom: 35px;
+            background: #fff;
+        }
+        .agro-video-item {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            background: #000;
+            overflow: hidden;
+            margin: 0;
+            padding-top: 0;
+            border: none;
+        }
+        .agro-video-item iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            margin: 0;
+            padding: 0;
+            display: block;
+        }
+        @media (max-width: 767px) {
+            .agro-video-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
     <div class="container" style="margin-top: 30px;">
         <div class="row">
             <div class="col-md-1 hidden-xs hidden-sm"></div>
             <div class="col-md-10 col-xs-12">
-                <h1 style="color: #333333; font-weight: 700; font-size: 32px; margin-bottom: 30px;">Kamrul Agro Products Producing Process</h1>
-            </div>
-            <div class="col-md-1 hidden-xs hidden-sm"></div>
-        </div>
+                <h1 style="color: #333333; font-weight: 700; font-size: 32px; margin-bottom: 25px;">Kamrul Agro Products Producing Process</h1>
 
-        <!-- Video Row 1 (00001, 00002, 00003) -->
-        <div class="row" style="margin-bottom: 25px;">
-            <div class="col-md-1 hidden-xs hidden-sm"></div>
-            <div class="col-md-3 col-sm-4 col-xs-12" style="margin-bottom: 20px;">
-                <div class="embed-responsive embed-responsive-16by9" style="box-shadow: 0 2px 8px rgba(0,0,0,0.15); border-radius: 4px;">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/c2hN7z8gEug" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="agro-video-grid">
+                    <div class="agro-video-item">
+                        <iframe src="https://www.youtube.com/embed/c2hN7z8gEug" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="agro-video-item">
+                        <iframe src="https://www.youtube.com/embed/y0bhhhmzx_s" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="agro-video-item">
+                        <iframe src="https://www.youtube.com/embed/Pt63Tfyuph8" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="agro-video-item">
+                        <iframe src="https://www.youtube.com/embed/mMdI0p0855w" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="agro-video-item">
+                        <iframe src="https://www.youtube.com/embed/jC4Zb4a86yU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="agro-video-item">
+                        <iframe src="https://www.youtube.com/embed/Fl-LBFUqgZY" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="agro-video-item">
+                        <iframe src="https://www.youtube.com/embed/xhWYGi5RKh8" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="agro-video-item">
+                        <iframe src="https://www.youtube.com/embed/zOVri7zPR-I" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="agro-video-item">
+                        <iframe src="https://www.youtube.com/embed/agHk_wUz4R4" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="agro-video-item">
+                        <iframe src="https://www.youtube.com/embed/W6KdbQW4Exg" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="agro-video-item">
+                        <iframe src="https://www.youtube.com/embed/w4s8gZKyTCc" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="agro-video-item">
+                        <iframe src="https://www.youtube.com/embed/NkyyUc4TZeE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="agro-video-item">
+                        <iframe src="https://www.youtube.com/embed/8Vt6ruxjC1k" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="agro-video-item">
+                        <iframe src="https://www.youtube.com/embed/OlWGRRt7_88" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="agro-video-item">
+                        <iframe src="https://www.youtube.com/embed/9khkDqrYK7k" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="agro-video-item">
+                        <iframe src="https://www.youtube.com/embed/QWLWse2tsSI" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="agro-video-item">
+                        <iframe src="https://www.youtube.com/embed/s5PlSs0gbRs" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
             <div class="col-md-1 hidden-xs hidden-sm"></div>
-            <div class="col-md-3 col-sm-4 col-xs-12" style="margin-bottom: 20px;">
-                <div class="embed-responsive embed-responsive-16by9" style="box-shadow: 0 2px 8px rgba(0,0,0,0.15); border-radius: 4px;">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/y0bhhhmzx_s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="col-md-1 hidden-xs hidden-sm"></div>
-            <div class="col-md-3 col-sm-4 col-xs-12" style="margin-bottom: 20px;">
-                <div class="embed-responsive embed-responsive-16by9" style="box-shadow: 0 2px 8px rgba(0,0,0,0.15); border-radius: 4px;">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Pt63Tfyuph8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-
-        <!-- Video Row 2 (00004, 00005, 00006) -->
-        <div class="row" style="margin-bottom: 25px;">
-            <div class="col-md-1 hidden-xs hidden-sm"></div>
-            <div class="col-md-3 col-sm-4 col-xs-12" style="margin-bottom: 20px;">
-                <div class="embed-responsive embed-responsive-16by9" style="box-shadow: 0 2px 8px rgba(0,0,0,0.15); border-radius: 4px;">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mMdI0p0855w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="col-md-1 hidden-xs hidden-sm"></div>
-            <div class="col-md-3 col-sm-4 col-xs-12" style="margin-bottom: 20px;">
-                <div class="embed-responsive embed-responsive-16by9" style="box-shadow: 0 2px 8px rgba(0,0,0,0.15); border-radius: 4px;">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jC4Zb4a86yU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="col-md-1 hidden-xs hidden-sm"></div>
-            <div class="col-md-3 col-sm-4 col-xs-12" style="margin-bottom: 20px;">
-                <div class="embed-responsive embed-responsive-16by9" style="box-shadow: 0 2px 8px rgba(0,0,0,0.15); border-radius: 4px;">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Fl-LBFUqgZY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-
-        <!-- Video Row 3 (00007, 00007 2, 00008) -->
-        <div class="row" style="margin-bottom: 25px;">
-            <div class="col-md-1 hidden-xs hidden-sm"></div>
-            <div class="col-md-3 col-sm-4 col-xs-12" style="margin-bottom: 20px;">
-                <div class="embed-responsive embed-responsive-16by9" style="box-shadow: 0 2px 8px rgba(0,0,0,0.15); border-radius: 4px;">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xhWYGi5RKh8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="col-md-1 hidden-xs hidden-sm"></div>
-            <div class="col-md-3 col-sm-4 col-xs-12" style="margin-bottom: 20px;">
-                <div class="embed-responsive embed-responsive-16by9" style="box-shadow: 0 2px 8px rgba(0,0,0,0.15); border-radius: 4px;">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zOVri7zPR-I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="col-md-1 hidden-xs hidden-sm"></div>
-            <div class="col-md-3 col-sm-4 col-xs-12" style="margin-bottom: 20px;">
-                <div class="embed-responsive embed-responsive-16by9" style="box-shadow: 0 2px 8px rgba(0,0,0,0.15); border-radius: 4px;">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/agHk_wUz4R4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-
-        <!-- Video Row 4 (00009, 00010, 00011) -->
-        <div class="row" style="margin-bottom: 25px;">
-            <div class="col-md-1 hidden-xs hidden-sm"></div>
-            <div class="col-md-3 col-sm-4 col-xs-12" style="margin-bottom: 20px;">
-                <div class="embed-responsive embed-responsive-16by9" style="box-shadow: 0 2px 8px rgba(0,0,0,0.15); border-radius: 4px;">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/W6KdbQW4Exg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="col-md-1 hidden-xs hidden-sm"></div>
-            <div class="col-md-3 col-sm-4 col-xs-12" style="margin-bottom: 20px;">
-                <div class="embed-responsive embed-responsive-16by9" style="box-shadow: 0 2px 8px rgba(0,0,0,0.15); border-radius: 4px;">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/w4s8gZKyTCc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="col-md-1 hidden-xs hidden-sm"></div>
-            <div class="col-md-3 col-sm-4 col-xs-12" style="margin-bottom: 20px;">
-                <div class="embed-responsive embed-responsive-16by9" style="box-shadow: 0 2px 8px rgba(0,0,0,0.15); border-radius: 4px;">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NkyyUc4TZeE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-
-        <!-- Video Row 5 (00012, 00013, 00014) -->
-        <div class="row" style="margin-bottom: 25px;">
-            <div class="col-md-1 hidden-xs hidden-sm"></div>
-            <div class="col-md-3 col-sm-4 col-xs-12" style="margin-bottom: 20px;">
-                <div class="embed-responsive embed-responsive-16by9" style="box-shadow: 0 2px 8px rgba(0,0,0,0.15); border-radius: 4px;">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/8Vt6ruxjC1k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="col-md-1 hidden-xs hidden-sm"></div>
-            <div class="col-md-3 col-sm-4 col-xs-12" style="margin-bottom: 20px;">
-                <div class="embed-responsive embed-responsive-16by9" style="box-shadow: 0 2px 8px rgba(0,0,0,0.15); border-radius: 4px;">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OlWGRRt7_88" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="col-md-1 hidden-xs hidden-sm"></div>
-            <div class="col-md-3 col-sm-4 col-xs-12" style="margin-bottom: 20px;">
-                <div class="embed-responsive embed-responsive-16by9" style="box-shadow: 0 2px 8px rgba(0,0,0,0.15); border-radius: 4px;">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9khkDqrYK7k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-
-        <!-- Video Row 6 (00015, 00016) -->
-        <div class="row" style="margin-bottom: 25px;">
-            <div class="col-md-1 hidden-xs hidden-sm"></div>
-            <div class="col-md-3 col-sm-4 col-xs-12" style="margin-bottom: 20px;">
-                <div class="embed-responsive embed-responsive-16by9" style="box-shadow: 0 2px 8px rgba(0,0,0,0.15); border-radius: 4px;">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/QWLWse2tsSI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="col-md-1 hidden-xs hidden-sm"></div>
-            <div class="col-md-3 col-sm-4 col-xs-12" style="margin-bottom: 20px;">
-                <div class="embed-responsive embed-responsive-16by9" style="box-shadow: 0 2px 8px rgba(0,0,0,0.15); border-radius: 4px;">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/s5PlSs0gbRs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="col-md-1 hidden-xs hidden-sm"></div>
-            <div class="col-md-3 col-sm-4 col-xs-12"></div>
         </div>
     </div>
 
