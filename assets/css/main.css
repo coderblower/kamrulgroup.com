@@ -8,7 +8,6 @@ a:focus {
 
 .dropdown-menu {
   margin-top: -1px;
-  min-width: 620px;
 }
 
 
@@ -128,9 +127,7 @@ a:focus {
 }
 .navbar-nav>li>.dropdown-menu {
     left: 0px;
-    padding-left:12px;
     background-color:#fff;
-    padding-top:0px;
 }
 
 

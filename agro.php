@@ -77,120 +77,233 @@ include("header.php");
 
     <!-- Video Producing Process Section -->
     <style>
+        .agro-video-section-wrap {
+            width: 100%;
+            max-width: 1260px;
+            margin: 35px auto 30px auto;
+            padding: 0 20px;
+        }
         .agro-video-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 0;
+            gap: 5px;
             width: 100%;
             margin-top: 15px;
             margin-bottom: 35px;
-            background: #fff;
+            background: transparent;
         }
-        .agro-video-item {
+        .agro-video-card {
             position: relative;
             width: 100%;
             height: 0;
             padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-            background: #000;
+            background: #000000;
             overflow: hidden;
-            margin: 0;
-            padding-top: 0;
-            border: none;
+            cursor: pointer;
+            border-radius: 3px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
-        .agro-video-item iframe {
+        .agro-video-card:hover {
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+        }
+        .agro-video-card img.agro-video-thumb {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            border: 0;
-            margin: 0;
-            padding: 0;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.35s ease, filter 0.35s ease;
+        }
+        .agro-video-card:hover img.agro-video-thumb {
+            transform: scale(1.04);
+            filter: brightness(1.08);
+        }
+        .agro-video-overlay-top {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 10px 12px;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 100%);
+            display: flex;
+            align-items: center;
+            z-index: 2;
+            pointer-events: none;
+        }
+        .agro-video-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 9px;
+            flex-shrink: 0;
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            background: #222;
+        }
+        .agro-video-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
             display: block;
         }
+        .agro-video-meta {
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9);
+        }
+        .agro-video-title {
+            color: #ffffff;
+            font-size: 13.5px;
+            font-weight: 700;
+            line-height: 1.2;
+            font-family: inherit;
+        }
+        .agro-channel-name {
+            color: #e2e8f0;
+            font-size: 11.5px;
+            font-weight: 400;
+            line-height: 1.2;
+            margin-top: 2px;
+        }
+        .agro-play-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            pointer-events: none;
+            transition: transform 0.25s ease, filter 0.25s ease;
+            filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.6));
+        }
+        .agro-video-card:hover .agro-play-btn {
+            transform: translate(-50%, -50%) scale(1.15);
+            filter: drop-shadow(0 4px 14px rgba(255, 0, 0, 0.6));
+        }
         @media (max-width: 767px) {
+            .agro-video-section-wrap {
+                padding: 0 10px;
+            }
             .agro-video-grid {
                 grid-template-columns: 1fr;
+                gap: 8px;
+            }
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+            .agro-video-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 5px;
             }
         }
     </style>
 
-    <div class="container" style="margin-top: 30px;">
-        <div class="row">
-            <div class="col-md-1 hidden-xs hidden-sm"></div>
-            <div class="col-md-10 col-xs-12">
-                <h1 style="color: #333333; font-weight: 700; font-size: 32px; margin-bottom: 25px;">Kamrul Agro Products Producing Process</h1>
+    <div class="agro-video-section-wrap">
+        <h1 style="color: #333333; font-weight: 700; font-size: 32px; margin-bottom: 20px;">Kamrul Agro Products Producing Process</h1>
 
-                <div class="agro-video-grid">
-                    <div class="agro-video-item">
-                        <iframe src="https://www.youtube.com/embed/c2hN7z8gEug" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="agro-video-grid">
+            <?php
+            $videos = [
+                ["id" => "c2hN7z8gEug", "title" => "00001"],
+                ["id" => "y0bhhhmzx_s", "title" => "00002"],
+                ["id" => "Pt63Tfyuph8", "title" => "00003"],
+                ["id" => "mMdI0p0855w", "title" => "00004"],
+                ["id" => "jC4Zb4a86yU", "title" => "00005"],
+                ["id" => "Fl-LBFUqgZY", "title" => "00006"],
+                ["id" => "xhWYGi5RKh8", "title" => "00007"],
+                ["id" => "zOVri7zPR-I", "title" => "00007 2"],
+                ["id" => "agHk_wUz4R4", "title" => "00008"],
+                ["id" => "W6KdbQW4Exg", "title" => "00009"],
+                ["id" => "w4s8gZKyTCc", "title" => "00010"],
+                ["id" => "NkyyUc4TZeE", "title" => "00011"],
+                ["id" => "8Vt6ruxjC1k", "title" => "00012"],
+                ["id" => "OlWGRRt7_88", "title" => "00013"],
+                ["id" => "9khkDqrYK7k", "title" => "00014"],
+                ["id" => "QWLWse2tsSI", "title" => "00015"],
+                ["id" => "s5PlSs0gbRs", "title" => "00016"],
+            ];
+
+            foreach ($videos as $v):
+            ?>
+            <div class="agro-video-card" onclick="openAgroVideo('<?php echo $v['id']; ?>', '<?php echo htmlspecialchars($v['title'], ENT_QUOTES); ?>')" role="button" tabindex="0" title="Play <?php echo htmlspecialchars($v['title'], ENT_QUOTES); ?>">
+                <img src="https://img.youtube.com/vi/<?php echo $v['id']; ?>/hqdefault.jpg" class="agro-video-thumb" alt="<?php echo htmlspecialchars($v['title'], ENT_QUOTES); ?>" loading="lazy">
+                <div class="agro-video-overlay-top">
+                    <div class="agro-video-avatar">
+                        <img src="assets/images/kamrul_avatar.jpg" alt="kamrul Ahsan">
                     </div>
-                    <div class="agro-video-item">
-                        <iframe src="https://www.youtube.com/embed/y0bhhhmzx_s" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="agro-video-item">
-                        <iframe src="https://www.youtube.com/embed/Pt63Tfyuph8" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="agro-video-item">
-                        <iframe src="https://www.youtube.com/embed/mMdI0p0855w" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="agro-video-item">
-                        <iframe src="https://www.youtube.com/embed/jC4Zb4a86yU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="agro-video-item">
-                        <iframe src="https://www.youtube.com/embed/Fl-LBFUqgZY" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="agro-video-item">
-                        <iframe src="https://www.youtube.com/embed/xhWYGi5RKh8" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="agro-video-item">
-                        <iframe src="https://www.youtube.com/embed/zOVri7zPR-I" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="agro-video-item">
-                        <iframe src="https://www.youtube.com/embed/agHk_wUz4R4" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="agro-video-item">
-                        <iframe src="https://www.youtube.com/embed/W6KdbQW4Exg" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="agro-video-item">
-                        <iframe src="https://www.youtube.com/embed/w4s8gZKyTCc" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="agro-video-item">
-                        <iframe src="https://www.youtube.com/embed/NkyyUc4TZeE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="agro-video-item">
-                        <iframe src="https://www.youtube.com/embed/8Vt6ruxjC1k" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="agro-video-item">
-                        <iframe src="https://www.youtube.com/embed/OlWGRRt7_88" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="agro-video-item">
-                        <iframe src="https://www.youtube.com/embed/9khkDqrYK7k" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="agro-video-item">
-                        <iframe src="https://www.youtube.com/embed/QWLWse2tsSI" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="agro-video-item">
-                        <iframe src="https://www.youtube.com/embed/s5PlSs0gbRs" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="agro-video-meta">
+                        <span class="agro-video-title"><?php echo htmlspecialchars($v['title']); ?></span>
+                        <span class="agro-channel-name">kamrul Ahsan</span>
                     </div>
                 </div>
+                <div class="agro-play-btn">
+                    <svg viewBox="0 0 68 48" width="58" height="40">
+                        <path d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" fill="#ff0000"></path>
+                        <path d="M 45,24 27,14 27,34" fill="#ffffff"></path>
+                    </svg>
+                </div>
             </div>
-            <div class="col-md-1 hidden-xs hidden-sm"></div>
+            <?php endforeach; ?>
+        </div>
+
+        <!-- Website Link -->
+        <p style="text-align: justify; font-size: 15px; color: #333; margin: 25px 0 35px 0;">
+            Website : &nbsp; <a href="http://www.kamrulgroup.com/" target="_blank" style="color: #2da1d7; font-weight: 500; text-decoration: none;">Kamrul Agro Food industries</a>
+        </p>
+    </div>
+
+    <!-- Video Playback Modal -->
+    <div class="modal fade" id="agroVideoModal" tabindex="-1" role="dialog" aria-labelledby="agroVideoModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document" style="max-width: 900px; margin-top: 50px;">
+            <div class="modal-content" style="background: #0f172a; border: 1px solid rgba(255,255,255,0.15); border-radius: 8px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.7);">
+                <div class="modal-header" style="background: #072e59; color: #fff; border-bottom: 1px solid #1e3a5f; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between;">
+                    <h4 class="modal-title" id="agroVideoModalTitle" style="color: #fec731; font-weight: 700; font-size: 16px; margin: 0; display: inline-block;">
+                        <i class="fa fa-youtube-play" style="color: #ff0000; margin-right: 8px; font-size: 18px;"></i>
+                        <span id="agroVideoTitleText">Kamrul Agro Video</span>
+                    </h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #ffffff; opacity: 0.9; font-size: 30px; line-height: 1; text-shadow: none; margin-top: -2px;">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="padding: 0; background: #000;">
+                    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                        <iframe id="agroVideoFrame" src="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="modal-footer" style="background: #072e59; border-top: 1px solid #1e3a5f; padding: 10px 20px; text-align: right;">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" style="background: #f1f5f9; color: #072e59; font-weight: 600; border: none; padding: 7px 22px; border-radius: 4px; font-size: 14px;">
+                        <i class="fa fa-times" style="margin-right: 6px;"></i> Close
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- Website Link -->
-    <div class="container" style="margin-top: 15px; margin-bottom: 35px;">
-        <div class="row">
-            <div class="col-md-1 hidden-xs hidden-sm"></div>
-            <div class="col-md-10 col-xs-12">
-                <p style="text-align: justify; font-size: 15px; color: #333; margin: 15px 0;">
-                    Website : &nbsp; <a href="http://www.kamrulgroup.com/" target="_blank" style="color: #2da1d7; font-weight: 500; text-decoration: none;">Kamrul Agro Food industries</a>
-                </p>
-            </div>
-            <div class="col-md-1 hidden-xs hidden-sm"></div>
-        </div>
-    </div>
+    <script>
+    function openAgroVideo(videoId, title) {
+        if (window.jQuery) {
+            $('#agroVideoTitleText').text(title + ' - Kamrul Agro Products Producing Process');
+            $('#agroVideoFrame').attr('src', 'https://www.youtube.com/embed/' + videoId + '?autoplay=1&rel=0');
+            $('#agroVideoModal').modal('show');
+        }
+    }
+
+    // Stop video playback when modal is closed
+    if (typeof jQuery !== 'undefined') {
+        $(document).ready(function() {
+            $('#agroVideoModal').on('hidden.bs.modal', function () {
+                $('#agroVideoFrame').attr('src', '');
+            });
+        });
+    } else {
+        window.addEventListener('DOMContentLoaded', function() {
+            $('#agroVideoModal').on('hidden.bs.modal', function () {
+                $('#agroVideoFrame').attr('src', '');
+            });
+        });
+    }
+    </script>
 </div>
 
 <?php include("footer.php"); ?>

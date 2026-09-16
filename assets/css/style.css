@@ -221,22 +221,22 @@ h1 {
 .navbar-nav > li.active > a {
   color: #1ab5d3;
 }
-.navbar-nav > li a {
+.navbar-nav > li > a {
   color: #3b4044;
   line-height: 2em;
   padding: 0;
 }
-.navbar-nav > li a:focus {
+.navbar-nav > li > a:focus {
   background: none;
   text-decoration: none;
   outline: none;
 }
-.navbar-nav > li a:hover {
+.navbar-nav > li > a:hover {
   background: none;
   color: #1ab5d3;
 }
 @media (min-width: 768px) {
-  .navbar-nav > li a {
+  .navbar-nav > li > a {
     padding: 0;
     font-size: 18px;
   }

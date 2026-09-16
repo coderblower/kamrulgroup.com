@@ -38,6 +38,79 @@
             width: 100%;
             height: auto;
         }
+
+        /* Navigation Dropdowns */
+        .navbar-nav > li.dropdown {
+            position: relative;
+        }
+        .navbar-nav .dropdown-menu {
+            border-radius: 6px !important;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+            border: 1px solid #e2e8f0 !important;
+            background-color: #ffffff !important;
+            padding: 8px 0 !important;
+            margin-top: 2px !important;
+            left: 0 !important;
+            right: auto !important;
+        }
+        .dropdown-menu-about {
+            min-width: 230px !important;
+            width: max-content !important;
+        }
+        .dropdown-menu-entities {
+            min-width: 530px !important;
+            max-width: 580px !important;
+            width: max-content !important;
+        }
+        .navbar-nav .dropdown-menu > li {
+            margin: 0 !important;
+            padding: 0 !important;
+            float: none !important;
+            display: block !important;
+            width: 100% !important;
+        }
+        .navbar-nav .dropdown-menu > li > a {
+            display: block !important;
+            padding: 7px 22px !important;
+            font-size: 14.5px !important;
+            line-height: 1.45 !important;
+            color: #334155 !important;
+            white-space: nowrap !important;
+            background: transparent !important;
+            border-radius: 0 !important;
+            transition: all 0.18s ease-in-out !important;
+        }
+        .navbar-nav .dropdown-menu > li > a:hover,
+        .navbar-nav .dropdown-menu > li > a:focus {
+            color: #1ab5d3 !important;
+            background-color: #f8fafc !important;
+            padding-left: 26px !important;
+            text-decoration: none !important;
+        }
+        @media (max-width: 767px) {
+            .navbar-nav .dropdown-menu,
+            .dropdown-menu-about,
+            .dropdown-menu-entities {
+                position: static !important;
+                float: none !important;
+                width: 100% !important;
+                min-width: 100% !important;
+                max-width: 100% !important;
+                box-shadow: none !important;
+                border: none !important;
+                background-color: #f8fafc !important;
+                padding: 4px 0 8px 15px !important;
+            }
+            .navbar-nav .dropdown-menu > li > a {
+                white-space: normal !important;
+                word-wrap: break-word !important;
+                padding: 7px 15px !important;
+                font-size: 14px !important;
+            }
+            .navbar-nav .dropdown-menu > li > a:hover {
+                padding-left: 15px !important;
+            }
+        }
     </style>
 </head>
 <body>
@@ -86,7 +159,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="index.php" title="">Home</a></li>
                         <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="">About us <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu dropdown-menu-about">
                                 <li><a href="about.php">About Kamrul Group</a></li>
                                 <li><a href="chairman.php">Chairman Message</a></li>
                                 <li><a href="chairmanp.php">Chairman Profile</a></li>
@@ -94,7 +167,7 @@
                             </ul>
                         </li>
                         <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="">Business Entities <b class="caret"></b></a>
-                            <ul class="dropdown-menu" style="min-width: 320px;">
+                            <ul class="dropdown-menu dropdown-menu-entities">
                                 <li><a href="agro.php">Kamrul Agro Food Industries Ltd.</a></li>
                                 <li><a href="mecca-cola.php">Mecca Cola,Bangladesh</a></li>
                                 <li><a href="must.php">Malaysia University of Science and Technology- Bangladesh Campus</a></li>
