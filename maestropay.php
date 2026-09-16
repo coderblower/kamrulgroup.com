@@ -2,35 +2,76 @@
 $page_title = "Maestro Pay SDN BHD | Kamrul Group";
 include("header.php");
 ?>
-<div class="page-header-banner">
+
+<style>
+    .maestropay-page-section {
+        padding-top: 35px;
+        padding-bottom: 50px;
+        background-color: #ffffff;
+    }
+    .maestropay-main-title {
+        color: #333333;
+        font-family: "Roboto Slab", serif;
+        font-weight: 700;
+        font-size: 32px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    .maestropay-description-text {
+        text-align: justify;
+        font-size: 14.5px;
+        line-height: 1.85;
+        color: #444444;
+        margin-bottom: 30px;
+    }
+    .maestropay-banner-wrap {
+        margin-bottom: 30px;
+    }
+    .maestropay-banner-wrap img {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        display: block;
+    }
+    .maestropay-website-link {
+        margin-top: 25px;
+        margin-bottom: 35px;
+        font-size: 15px;
+        color: #444444;
+    }
+    .maestropay-website-link a {
+        color: #2da1d7;
+        font-weight: 500;
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+    .maestropay-website-link a:hover {
+        color: #072e59;
+        text-decoration: underline;
+    }
+</style>
+
+<div class="section-area maestropay-page-section" style="background-image: none;">
     <div class="container">
-        <h1>Maestro Pay SDN BHD</h1>
-    </div>
-</div>
-<div class="container" style="padding-bottom: 60px;">
-    <div class="row">
-        <div class="col-md-8">
-            <h2 style="color:#072e59; font-weight:700; margin-top:0;">About Maestro Pay SDN BHD</h2>
-            <p style="font-size: 16px; line-height: 1.8; color:#475569; text-align: justify; margin-top: 20px;">
-                A Malaysian fintech entity dedicated to digital wallets, cross-border payments, and secure financial settlements.
-            </p>
-            <p style="font-size: 16px; line-height: 1.8; color:#475569; text-align: justify;">
-                As a proud entity of Kamrul Group, our mission centers on delivering superior product value, leveraging technological excellence, and upholding strict corporate governance to empower the economy and our communities.
-            </p>
-            <div style="margin-top: 30px;">
-                <a href="contact.php" class="btn btn-primary" style="background:#0b4b8a; border-color:#0b4b8a; padding:10px 24px; font-weight:600;">Inquire About This Entity</a>
-            </div>
+        <!-- Main Title matching pages/maestropay.png -->
+        <h1 class="maestropay-main-title">Maestro Pay SDN BHD</h1>
+
+        <!-- Description Text matching pages/maestropay.png -->
+        <p class="maestropay-description-text">
+            Maestro Pay SDN BHD is a company registered and Licensed in Malaysia. The company operates as the payment solution through its own transaction engine and software as e-wallet and Mobile banking transactions for the parties through maintaining an escrow account with a bank.
+        </p>
+
+        <!-- Banner Image (maestropay-banner.png) -->
+        <div class="maestropay-banner-wrap">
+            <img src="assets/images/banner/maestropay-banner.png" alt="Maestro Pay SDN BHD">
         </div>
-        <div class="col-md-4">
-            <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:25px;">
-                <h4 style="color:#072e59; font-weight:700; margin-top:0;">Corporate Details</h4>
-                <ul class="list-unstyled" style="line-height:2; margin-top:15px; color:#475569;">
-                    <li><strong>Parent:</strong> Kamrul Group</li>
-                    <li><strong>Inquiries:</strong> info@kamrulgroup.com</li>
-                    <li><strong>Phone:</strong> +88 02 9897873</li>
-                </ul>
-            </div>
+
+        <!-- Website Link matching pages/maestropay.png -->
+        <div class="maestropay-website-link">
+            Website : &nbsp; <a href="http://maestropay.com.my/" target="_blank">Maestro Pay SDN BHD</a>
         </div>
     </div>
 </div>
+
 <?php include("footer.php"); ?>

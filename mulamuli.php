@@ -1,36 +1,81 @@
 <?php
-$page_title = "Mulamuli.com.bd | Kamrul Group";
+$page_title = "mulamuli.com.bd | Kamrul Group";
 include("header.php");
 ?>
-<div class="page-header-banner">
+
+<style>
+    .mulamuli-page-section {
+        padding-top: 35px;
+        padding-bottom: 50px;
+        background-color: #ffffff;
+    }
+    .mulamuli-main-title {
+        color: #333333;
+        font-family: "Roboto Slab", serif;
+        font-weight: 700;
+        font-size: 32px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    .mulamuli-description-text {
+        text-align: justify;
+        font-size: 14.5px;
+        line-height: 1.85;
+        color: #444444;
+        margin-bottom: 18px;
+    }
+    .mulamuli-banner-wrap {
+        margin-top: 25px;
+        margin-bottom: 30px;
+    }
+    .mulamuli-banner-wrap img {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        display: block;
+    }
+    .mulamuli-website-link {
+        margin-top: 25px;
+        margin-bottom: 35px;
+        font-size: 15px;
+        color: #444444;
+    }
+    .mulamuli-website-link a {
+        color: #2da1d7;
+        font-weight: 500;
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+    .mulamuli-website-link a:hover {
+        color: #072e59;
+        text-decoration: underline;
+    }
+</style>
+
+<div class="section-area mulamuli-page-section" style="background-image: none;">
     <div class="container">
-        <h1>Mulamuli.com.bd</h1>
-    </div>
-</div>
-<div class="container" style="padding-bottom: 60px;">
-    <div class="row">
-        <div class="col-md-8">
-            <h2 style="color:#072e59; font-weight:700; margin-top:0;">About Mulamuli.com.bd</h2>
-            <p style="font-size: 16px; line-height: 1.8; color:#475569; text-align: justify; margin-top: 20px;">
-                An innovative e-commerce marketplace offering retail consumers competitive pricing, authentic products, and prompt doorstep delivery.
-            </p>
-            <p style="font-size: 16px; line-height: 1.8; color:#475569; text-align: justify;">
-                As a proud entity of Kamrul Group, our mission centers on delivering superior product value, leveraging technological excellence, and upholding strict corporate governance to empower the economy and our communities.
-            </p>
-            <div style="margin-top: 30px;">
-                <a href="contact.php" class="btn btn-primary" style="background:#0b4b8a; border-color:#0b4b8a; padding:10px 24px; font-weight:600;">Inquire About This Entity</a>
-            </div>
+        <!-- Main Title matching pages/mulamuli.png -->
+        <h1 class="mulamuli-main-title">mulamuli.com.bd</h1>
+
+        <!-- Description Text matching pages/mulamuli.png -->
+        <p class="mulamuli-description-text">
+            Mulamuli.com.bd is the one n only online Bargaining marketplace in Bangladesh. In this platform customer can buy a brand new product with Bargain or Action as well as customer can sell their old product. We're creating a better platform of e-Commerce in Bangladesh. We connect millions of buyers and sellers around the world, empowering people and creating economic opportunity for all. Mulamuli.com.bd offers a diverse assortment in categories ranging from consumer electronics to household goods, beauty, fashion, health & sports equipment, groceries, and Makeup.
+        </p>
+        <p class="mulamuli-description-text">
+            Whether you are buying a new or used, plain or luxurious, commonplace or rare, trendy or one-of-a-kind – if it exists in the world, it probably is for sale on mulamuli.com.bd.
+        </p>
+
+        <!-- Banner Image (3. Mulamuli.com.bd .jpg) -->
+        <div class="mulamuli-banner-wrap">
+            <img src="assets/images/banner/mulamuli_banner.jpg" alt="mulamuli.com.bd">
         </div>
-        <div class="col-md-4">
-            <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:25px;">
-                <h4 style="color:#072e59; font-weight:700; margin-top:0;">Corporate Details</h4>
-                <ul class="list-unstyled" style="line-height:2; margin-top:15px; color:#475569;">
-                    <li><strong>Parent:</strong> Kamrul Group</li>
-                    <li><strong>Inquiries:</strong> info@kamrulgroup.com</li>
-                    <li><strong>Phone:</strong> +88 02 9897873</li>
-                </ul>
-            </div>
+
+        <!-- Website Link matching pages/mulamuli.png -->
+        <div class="mulamuli-website-link">
+            Website : &nbsp; <a href="http://mulamuli.com.bd/" target="_blank">mulamuli.com.bd</a>
         </div>
     </div>
 </div>
+
 <?php include("footer.php"); ?>

@@ -172,7 +172,7 @@
                                 <li><a href="mecca-cola.php">Mecca Cola,Bangladesh</a></li>
                                 <li><a href="must.php">Malaysia University of Science and Technology- Bangladesh Campus</a></li>
                                 <li><a href="swiftlink.php">Swiftlink Payment Services L.L.C</a></li>
-                                <li><a href="maestrosoft.php">Meastro Soft Ltd.</a></li>
+                                <li><a href="maestrosoft.php">Maestro Soft Ltd.</a></li>
                                 <li><a href="tfpbd.php">TFP Solutions(Bangladesh)Ltd</a></li>
                                 <li><a href="maestrocrown.php">Maestro Crown College</a></li>
                                 <li><a href="khobor71.php">Khobor71</a></li>

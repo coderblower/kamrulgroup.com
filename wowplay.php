@@ -1,36 +1,78 @@
 <?php
-$page_title = "Wow Play | Kamrul Group";
+$page_title = "Wow Play IP Television | Kamrul Group";
 include("header.php");
 ?>
-<div class="page-header-banner">
+
+<style>
+    .wowplay-page-section {
+        padding-top: 35px;
+        padding-bottom: 50px;
+        background-color: #ffffff;
+    }
+    .wowplay-main-title {
+        color: #333333;
+        font-family: "Roboto Slab", serif;
+        font-weight: 700;
+        font-size: 32px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    .wowplay-description-text {
+        text-align: justify;
+        font-size: 14.5px;
+        line-height: 1.85;
+        color: #444444;
+        margin-bottom: 18px;
+    }
+    .wowplay-banner-wrap {
+        margin-top: 25px;
+        margin-bottom: 30px;
+    }
+    .wowplay-banner-wrap img {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        display: block;
+    }
+    .wowplay-website-link {
+        margin-top: 25px;
+        margin-bottom: 35px;
+        font-size: 15px;
+        color: #444444;
+    }
+    .wowplay-website-link a {
+        color: #2da1d7;
+        font-weight: 500;
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+    .wowplay-website-link a:hover {
+        color: #072e59;
+        text-decoration: underline;
+    }
+</style>
+
+<div class="section-area wowplay-page-section" style="background-image: none;">
     <div class="container">
-        <h1>Wow Play</h1>
-    </div>
-</div>
-<div class="container" style="padding-bottom: 60px;">
-    <div class="row">
-        <div class="col-md-8">
-            <h2 style="color:#072e59; font-weight:700; margin-top:0;">About Wow Play</h2>
-            <p style="font-size: 16px; line-height: 1.8; color:#475569; text-align: justify; margin-top: 20px;">
-                A digital media streaming and entertainment platform bringing premium video, music, and multimedia content to modern audiences.
-            </p>
-            <p style="font-size: 16px; line-height: 1.8; color:#475569; text-align: justify;">
-                As a proud entity of Kamrul Group, our mission centers on delivering superior product value, leveraging technological excellence, and upholding strict corporate governance to empower the economy and our communities.
-            </p>
-            <div style="margin-top: 30px;">
-                <a href="contact.php" class="btn btn-primary" style="background:#0b4b8a; border-color:#0b4b8a; padding:10px 24px; font-weight:600;">Inquire About This Entity</a>
-            </div>
+        <!-- Main Title matching pages/wowplay.png -->
+        <h1 class="wowplay-main-title">Wow Play IP Television</h1>
+
+        <!-- Description Text matching pages/wowplay.png -->
+        <p class="wowplay-description-text">
+            Wow Play IP Television spnosored By Kamrul Group.
+        </p>
+
+        <!-- Banner Image (6.Wow Play TV.jpg) -->
+        <div class="wowplay-banner-wrap">
+            <img src="assets/images/banner/wowplay_banner.jpg" alt="Wow Play IP Television">
         </div>
-        <div class="col-md-4">
-            <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:25px;">
-                <h4 style="color:#072e59; font-weight:700; margin-top:0;">Corporate Details</h4>
-                <ul class="list-unstyled" style="line-height:2; margin-top:15px; color:#475569;">
-                    <li><strong>Parent:</strong> Kamrul Group</li>
-                    <li><strong>Inquiries:</strong> info@kamrulgroup.com</li>
-                    <li><strong>Phone:</strong> +88 02 9897873</li>
-                </ul>
-            </div>
+
+        <!-- Website Link matching pages/wowplay.png -->
+        <div class="wowplay-website-link">
+            Website : &nbsp; <a href="http://wowplaytv.com/" target="_blank">Wow Play IP Television</a>
         </div>
     </div>
 </div>
+
 <?php include("footer.php"); ?>
